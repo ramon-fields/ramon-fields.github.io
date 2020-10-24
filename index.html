@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Ramon's Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Ramon Fields</h1>
+    <span>Software Developer</span>
+  </header>
+  
+  <main>
+    <div id="main">
+      <img src="assets/Ramon&kids.JPG" />
+      </div>
+      <section id="aboutMe">
+        <h2>About Me</h2>
+        <p> Ramon is from Youngstown, Ohio where he is working towards a career in Software Development. 
+          He is a curious individual who is never satisfied with his current knowledge.
+          Because of that he continually seeks every opportunity available to gain new, knowledge and information. 
+          He believes the secret to success is to try to always improve on yourself no matter where you are or what your position is.
+          In his spare time, Ramon enjoys family time, movies, music, and his projects.</p>
+        <h3>
+          Learn more about me: <span id="modal-trigger" class="live">List of skills</span>.
+        </h3>
+      </section>
+
+      <section id="myProjects">
+        <h2>My Projects</h2>
+        <div id="projects">
+          <article>
+            <h3>Fortune Teller App</h3>
+            <img src="/assets/FortuneTeller.png">
+            <p>Fortune Teller App</p>
+            <button onclick="window.location.href='https://github.com/ramon-fields/fortune-teller';">Show Details</button>
+          </article>
+          <article>
+            <h3>Virtual Pet App</h3> 
+            <img src="/assets/VirtualPet.png">
+            <p>Virtual Pet App</p>
+            <button onclick="window.location.href='https://github.com/ramon-fields/virtual-pet-ramon-fields';">Show Details</button>
+          </article>
+          <article>
+            <h3>Virtual Pet Shelter Amok App</h3>
+            <img src="/assets/VirtualPetShelterAmok.png">
+            <p>Virtual Pet Shelter Amok App</p>
+            <button onclick="window.location.href='https://github.com/ramon-fields/virtual-pet-shelter-amok';">Show Details</button>
+          </article>
+        </div>
+      </section>
+    
+      <section>
+
+        <div id="slider">
+          <div id="slider-frame">
+            
+            <div id="slider-prev">PREV</div>
+            <div id="slider-next">NEXT</div>
+
+            <div id="slider-images">
+              <div data-src="/assets/GreatBudget.png">
+                Great Budget App
+              </div>
+              <div data-src="/assets/ShoeReviews.png">
+                Shoe Review Site
+              </div>
+              <div data-src="/assets/NikeFullStack.png">
+                Fullstack Site
+              </div>
+            </div>
+
+          </div>
+          <div id="slider-caption">
+            The caption.
+          </div>
+        </div>
+
+      </section>
+
+      <section id="contactInfo">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><a href="https://github.com/ramon-fields">Github</a></li>
+          <li><a href="https://linkedin.com/in/ramon-fields">LinkedIn</a></li>
+        </ul>
+      </section>
+      
+  </main>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#aboutMe">About Me</a>
+    <a href="#myProjects">My Projects</a>
+    <a href="#contactInfo">Contact Info</a>
+  </nav>
+  
+  <footer>
+    <div>
+      &copy; Fields 2020
+    </div>
+  </footer>
+
+  <div id="backdrop">
+    <div id="modal">
+      <button class="text-button">Close</button>
+      <h4>List of skills</h4>
+
+      <div id="modal-content">
+          <p>Java • Spring • JPA • JavaScript • MVC • HTML • CSS • Flexbox • Grid • TDD • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Relational Databases • Source Control / Git
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+
+</body>
+</html>
